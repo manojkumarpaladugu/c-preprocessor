@@ -21,7 +21,7 @@ void macro_replace(char *file)
 	}
 	rewind(fsrc);
 
-	//find and replace macro with expansion
+	//find and replace macro_name with expansion
 	while(fgets(buf,sizeof(buf),fsrc)!=NULL)
 	{
 	    if(strstr(buf,"#define"))
